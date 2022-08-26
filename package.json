@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "serve:dev": "vite --mode dev",
+    "serve:dev": "vite --mode dev --open",
     "serve:dev-force": "vite --mode dev --force",
     "serve:test": "vite --mode test",
     "build:pro": "tsc && vite build --mode pro",
