@@ -1,6 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@types/node': ^18.7.13
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.1
@@ -17,6 +18,7 @@ dependencies:
   react-router-dom: registry.npmjs.org/react-router-dom/6.3.0_react-dom@18.2.0+react@18.2.0
 
 devDependencies:
+  '@types/node': registry.npmjs.org/@types/node/18.7.13
   '@types/react': registry.npmjs.org/@types/react/18.0.17
   '@types/react-dom': registry.npmjs.org/@types/react-dom/18.0.6
   '@vitejs/plugin-react': registry.npmjs.org/@vitejs/plugin-react/2.0.1_vite@3.0.9
@@ -423,6 +425,12 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': registry.npmjs.org/@jridgewell/resolve-uri/3.1.0
       '@jridgewell/sourcemap-codec': registry.npmjs.org/@jridgewell/sourcemap-codec/1.4.14
+    dev: true
+
+  registry.npmjs.org/@types/node/18.7.13:
+    resolution: {integrity: sha512-46yIhxSe5xEaJZXWdIBP7GU4HDTG8/eo0qd9atdiL+lFpA03y8KS+lkTN834TWJj5767GbWv4n/P6efyTFt1Dw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/node/-/node-18.7.13.tgz}
+    name: '@types/node'
+    version: 18.7.13
     dev: true
 
   registry.npmjs.org/@types/prop-types/15.7.5:

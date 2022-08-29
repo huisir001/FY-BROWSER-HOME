@@ -1,0 +1,36 @@
+.top-bar {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin: 0 20px;
+  line-height: 1;
+
+  &>* {
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+
+  .left {
+    .logo {
+      height: inherit;
+      width: auto;
+    }
+  }
+
+  .right {
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      .li {
+        margin-left: 10px;
+      }
+    }
+  }
+}
