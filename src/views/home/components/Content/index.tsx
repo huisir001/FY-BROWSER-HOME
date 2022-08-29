@@ -2,7 +2,7 @@
  * @Description: 内容
  * @Autor: HuiSir<github.com/huisir001>
  * @Date: 2022-08-29 11:10:44
- * @LastEditTime: 2022-08-29 18:09:45
+ * @LastEditTime: 2022-08-29 18:34:55
  */
 import { useState } from 'react'
 import './index.scss'
@@ -10,13 +10,13 @@ import './index.scss'
 export default () => {
   const [searchVal, setSearchVal] = useState('')
   const handleSearch = (type: 'baidu' | 'google') => {
-    console.log(type);
+    const val = encodeURIComponent(searchVal)
     switch (type) {
       case 'baidu':
-        window.open('//www.baidu.com/s?wd=' + searchVal)
+        window.open('//www.baidu.com/s?wd=' + val)
         break;
       case 'google':
-        window.open('//www.google.com/search?q=' + searchVal)
+        window.open('//www.google.com/search?q=' + val)
         break;
     }
   }
