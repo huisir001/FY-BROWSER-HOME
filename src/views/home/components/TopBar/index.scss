@@ -5,20 +5,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 60px;
   margin: 0 20px;
   line-height: 1;
 
   &>* {
     display: flex;
     align-items: center;
-    height: 30px;
+    height: 40px;
   }
 
   .left {
     .logo {
       height: inherit;
       width: auto;
+      filter: drop-shadow(1px 1px 10px #000);
     }
   }
 
@@ -30,6 +31,8 @@
 
       .li {
         margin-left: 10px;
+        color: #fff;
+        filter: drop-shadow(1px 1px 5px #000);
       }
     }
   }
