@@ -2,7 +2,7 @@
  * @Description: jsonp
  * @Autor: HuiSir<273250950@qq.com>
  * @Date: 2022-08-30 01:38:12
- * @LastEditTime: 2022-08-30 02:20:21
+ * @LastEditTime: 2022-08-30 13:11:27
  */
 export default (url: string, data: { [key: string]: string | number }, cbKey: string = 'cb') => {
     return new Promise((resolve, reject) => {
@@ -13,10 +13,10 @@ export default (url: string, data: { [key: string]: string | number }, cbKey: st
             }
             const script = document.createElement('script')
             script.type = 'text/javascript'
-            script.src = url + obj2Query(data) + `&${cbKey}=${jsonpCb}`
+            script.src = url + obj2Query(data) + `&${cbKey}=window.${jsonpCb}&sj=${Date.now()}`
             document.getElementsByTagName('head')[0].appendChild(script)
             script.onload = () => {
-                delete (window as any)[jsonpCb]
+                // delete (window as any)[jsonpCb]
                 script.remove()
             }
         } catch (error) {

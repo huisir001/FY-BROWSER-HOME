@@ -23,6 +23,7 @@
       font-size: 16px;
       line-height: 16px;
       color: #fff;
+      z-index: 1;
 
       &::-webkit-input-placeholder {
         color: #ccc;
@@ -56,6 +57,40 @@
       background-repeat: no-repeat;
       background-position: center;
       filter: opacity(.7);
+      z-index: 1;
+    }
+
+    .search-suggest {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 394px;
+      padding-top: 31px;
+      background: rgba(0, 0, 0, .4);
+      backdrop-filter: saturate(180%) blur(10px);
+      // border: 1px solid #cccccc21;
+      border-radius: 3px;
+
+      .item {
+        padding: 0 40px 0 14px;
+        height: 31px;
+        line-height: 30px;
+        font-size: 16px;
+        color: #fff;
+        overflow: hidden;
+        cursor: pointer;
+        // border-top: 1px solid #cccccc21;
+
+        &.act,
+        &:hover {
+          background: rgba(255, 255, 255, .1);
+        }
+      }
+
+      .intro {
+        text-align: right;
+        padding: 6px 14px;
+      }
     }
 
     .search-btns {
